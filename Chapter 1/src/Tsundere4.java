@@ -1,6 +1,6 @@
 package src;
 
-// This File is read-only, don't get dumb ideas >:(
+// READ ONLY
 public class Tsundere4 extends Thread{
     private boolean hasBeenHeadpat = false;
 

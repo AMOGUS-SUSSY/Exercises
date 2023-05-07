@@ -74,10 +74,10 @@ public class Test9 {
         int partition = coconuts.length / proc;
         Thread[] p = new Thread[proc];
         for (int i = 0; i < proc; i++) {
-            final int start = i * partition;
+            final int start = i;
             p[i] = new Thread(() -> {
                 int temp = 0;
-                for (int j = start; j < start + partition; j++) {
+                for (int j = start * partition; j < start * (partition + 1); j++) {
                     temp += coconuts[j];
                 }
                 intermediate[start] = temp;
